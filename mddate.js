@@ -1,6 +1,8 @@
 "use strict";
 var MdDate = function (date){
-  alert(data);
+  this.ff = function(){
+    alert(date);
+  },
   this.date = new Date(date),
 
   this.year= this.date.getFullYear(),
