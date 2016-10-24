@@ -12,7 +12,6 @@ var MdDate = function (date){
 MdDate.prototype = {
   whichDay: function(){
     var now = new Date();
-    alert(now);
     //今天
     if(now.getDate() == this.day){
       return '今天';
@@ -60,6 +59,7 @@ MdDate.prototype = {
   //传入的date格式是:年月日 时分
   getWeekStr : function(date){
     var week = this.date.getDay();
+    alert(week);
     var str = "";
     if (week == 0) {
           str = "周日";
