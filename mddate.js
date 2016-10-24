@@ -12,6 +12,7 @@ var MdDate = function (date){
 MdDate.prototype = {
   whichDay: function(){
     var now = new Date();
+    alert(now);
     //今天
     if(now.getDate() == this.day){
       return '今天';
