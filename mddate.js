@@ -1,6 +1,5 @@
-"use strict";
 var MdDate = function (date){
-  this.date = new Date(date),
+  this.date = new Date(date.replace(/-/g,'/')),
 
   this.year= this.date.getFullYear(),
   this.month = this.date.getMonth() + 1,
