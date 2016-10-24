@@ -1,3 +1,4 @@
+"use strict";
 var MdDate = function (date){
   this.date = new Date(date),
 
@@ -58,6 +59,7 @@ MdDate.prototype = {
   //传入的date格式是:年月日 时分
   getWeekStr : function(date){
     var week = this.date.getDay();
+    var str = "";
     if (week == 0) {
           str = "周日";
     } else if (week == 1) {
