@@ -57,7 +57,7 @@ MdDate.prototype = {
     }
   },
   //传入的date格式是:年月日 时分
-  getWeekStr : function(date){
+  getWeekStr : function(){
     var week = this.date.getDay();
     alert(week);
     var str = "";
