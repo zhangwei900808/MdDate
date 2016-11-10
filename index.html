@@ -7,10 +7,14 @@
   <body>
     <script type="text/javascript" src="mddate.js"></script>
     <script type="text/javascript">
-      var date = new MdDate('2016-10-01 12:35:23');
-      var week1 = date.whichDay();
-      var week2 = date.whichDays();
-    alert(week1+"-"+week2)
+      var date = new MdDate('2016-11-05 12:35:23');
+      date.timeleft(5,function(){
+        alert(1)
+      });
+      //alert(date.format('yyyy-MM-dd HH:mm:ss'))
+    //   var week1 = date.whichDay();
+    //   var week2 = date.whichDays();
+    // alert(week1+"-"+week2)
     </script>
   </body>
 </html>
